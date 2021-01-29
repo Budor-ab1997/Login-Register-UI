@@ -249,7 +249,6 @@ class _RegisterPageState extends State<RegisterPage> {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            //// #62BD07 أخضر
                             Colors.deepPurpleAccent,
                             Color(0xFFF7F9FB),
                             Color(0xFFFCF8E7),
@@ -302,8 +301,6 @@ class _RegisterPageState extends State<RegisterPage> {
                                 child: TextFormField(
                                   enabled: false,
                                   textInputAction: TextInputAction.next,
-
-                                  //controller: _eventDateController,
                                   decoration: InputDecoration(
                                     labelText: (pickeddate == null)
                                         ? "تاريخ الميلاد.."
@@ -338,7 +335,7 @@ class _RegisterPageState extends State<RegisterPage> {
                                       onChanged: (date) {
                                     print('change $date');
                                     setState(() {
-                                      pickeddate = date; //"${date.day}";
+                                      pickeddate = date;
                                     });
                                   }, onConfirm: (date) {});
                                 },
